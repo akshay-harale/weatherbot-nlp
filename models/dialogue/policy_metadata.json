@@ -1,0 +1,29 @@
+{
+  "action_fingerprints": {
+    "utter_goodbye": {
+      "slots": []
+    }, 
+    "action_listen": {
+      "slots": [
+        "location"
+      ]
+    }, 
+    "action_weather": {
+      "slots": [
+        "location"
+      ]
+    }, 
+    "null": {
+      "slots": [
+        "location"
+      ]
+    }
+  }, 
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble", 
+  "max_history": 3, 
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy", 
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ], 
+  "rasa_core": "0.8.5"
+}
